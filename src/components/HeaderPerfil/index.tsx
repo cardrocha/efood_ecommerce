@@ -9,25 +9,27 @@ import {
 
 import LogoEfood from '../../assets/image/logo.svg'
 import sombra from '../../assets/image/sombra.png'
+import { Establishment } from '../../pages/Home'
 
 type Props = {
-  title: string
-  titlePerfil: string
+  content: Establishment
 }
 
-const HeaderPerfil = ({ title, titlePerfil }: Props) => (
-  <>
-    <ContentPerfil>
-      <LinkPerfil to="/">Restautantes</LinkPerfil>
-      <img src={LogoEfood} alt="logo da efood" />
-      <CartPerfil>0 produto(s) no carrinho</CartPerfil>
-    </ContentPerfil>
-    <TextoPerfil>
-      <TituloTipoPerfil>{title}</TituloTipoPerfil>
-      <TituloPerfil>{titlePerfil}</TituloPerfil>
-      <img className="sombra" src={sombra} alt="sombra do banner" />
-    </TextoPerfil>
-  </>
-)
+const HeaderPerfil = ({ content }: Props) => {
+  return (
+    <>
+      <ContentPerfil>
+        <LinkPerfil to="/">Restautantes</LinkPerfil>
+        <img src={LogoEfood} alt="logo da efood" />
+        <CartPerfil>0 produto(s) no carrinho</CartPerfil>
+      </ContentPerfil>
+      <TextoPerfil>
+        <TituloTipoPerfil>{content.tipo}</TituloTipoPerfil>
+        <TituloPerfil>{content.titulo}</TituloPerfil>
+        <img className="sombra" src={sombra} alt="sombra do banner" />
+      </TextoPerfil>
+    </>
+  )
+}
 
 export default HeaderPerfil

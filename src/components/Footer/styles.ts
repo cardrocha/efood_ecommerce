@@ -10,11 +10,12 @@ export const FooterBox = styled.div`
 
   .imgEfood {
     margin-bottom: 32px;
+    margin-right: 30px;
   }
 
   .imgLinks {
     display: flex;
-    margin: 0 600px;
+    margin: 0 585px;
     gap: 8px;
     width: 200px;
     margin-bottom: 80px;

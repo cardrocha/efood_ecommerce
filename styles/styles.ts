@@ -23,7 +23,6 @@ export const EstiloGlobal = createGlobalStyle`
 `
 export const Container = styled.div`
   max-width: 1366px;
-  /* height: 2000px; */
   width: 100%;
   margin: 0 auto;
   background-color: #dbdfea;

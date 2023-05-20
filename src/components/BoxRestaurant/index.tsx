@@ -1,5 +1,8 @@
 import Button from '../Button'
 import Tag from '../Tag'
+
+import star from '../../assets/image/star.svg'
+
 import {
   BoxContainer,
   BoxContent,
@@ -10,21 +13,19 @@ import {
 } from './styles'
 
 type Props = {
+  id: number
   title: string
-  to: string
-  note: string
-  content?: string
-  category: string
+  note: number
+  contents: string[]
   description: string
   image: string
 }
 
 const Restaurant = ({
+  id,
   title,
-  to,
   note,
-  content,
-  category,
+  contents,
   description,
   image
 }: Props) => (
@@ -33,14 +34,18 @@ const Restaurant = ({
     <BoxContent>
       <TitleContainer>
         <Titulo>{title}</Titulo>
-        <Titulo>{note}</Titulo>
+        <div className="note">
+          <Titulo>{note}</Titulo>
+          <img className="star" src={star} alt="ícone estrela" />
+        </div>
       </TitleContainer>
       <TagTitle>
-        {content && <Tag size="small">{content}</Tag>}
-        {category && <Tag size="small">{category}</Tag>}
+        {contents.map((content) => (
+          <Tag key={content}>{content}</Tag>
+        ))}
       </TagTitle>
       <Descricao>{description}</Descricao>
-      <Button type="link" to={to} title="clique e saiba mais">
+      <Button type="link" to={`/perfil/${id}`} title="clique e saiba mais">
         Saiba mais
       </Button>
     </BoxContent>

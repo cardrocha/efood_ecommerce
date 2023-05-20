@@ -1,9 +1,9 @@
-import Menu from '../../models/Menu'
+import { MenuItem } from '../../pages/Home'
 import MenuList from '../Menu'
 import { ContainerMenu, List } from './styles'
 
 type Props = {
-  menu: Menu[]
+  menu: MenuItem[]
 }
 
 const ListMenu = ({ menu }: Props) => (
@@ -12,12 +12,16 @@ const ListMenu = ({ menu }: Props) => (
       <ul>
         <List>
           {menu.map((menu) => (
-            <MenuList
-              key={menu.id}
-              image={menu.image}
-              title={menu.title}
-              description={menu.description}
-            />
+            <li key={menu.id}>
+              <MenuList
+                image={menu.foto}
+                preco={menu.preco}
+                item={menu.id}
+                title={menu.nome}
+                description={menu.descricao}
+                porcao={menu.porcao}
+              />
+            </li>
           ))}
         </List>
       </ul>

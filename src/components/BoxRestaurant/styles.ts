@@ -5,21 +5,26 @@ import { TagContainer } from '../Tag/styles'
 export const BoxContainer = styled.div`
   background-color: ${cores.branco};
   position: relative;
-  margin-bottom: 40px;
   width: 471px;
-  margin-left: 140px;
   border: 1px solid ${cores.fundo};
 
-  :nth-child(2) {
-    margin-left: 100px;
+  .note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 8px;
   }
 
-  :nth-child(4) {
-    margin-left: 100px;
+  .star {
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
   }
 
   img {
     width: 100%;
+    height: 217px;
+    object-fit: cover;
   }
 
   ${TagContainer} {
@@ -27,7 +32,7 @@ export const BoxContainer = styled.div`
   }
 `
 export const BoxContent = styled.div`
-  width: 456px;
+  width: 100%;
   padding: 8px;
 `
 
@@ -52,10 +57,11 @@ export const Titulo = styled.h3`
   margin-bottom: 16px;
 `
 export const Descricao = styled.p`
+  display: block;
   color: ${cores.texto};
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  display: block;
+  width: 100%;
   margin-bottom: 16px;
 `

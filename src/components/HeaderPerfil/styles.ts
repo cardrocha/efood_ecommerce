@@ -32,11 +32,6 @@ export const CartPerfil = styled.p`
   font-weight: bold;
   margin-right: 170px;
 `
-export const ContainerBanner = styled.div`
-  .imagemPerfil {
-    position: relative;
-  }
-`
 
 export const TituloTipoPerfil = styled.h2`
   font-size: 32px;

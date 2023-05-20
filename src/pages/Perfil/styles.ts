@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
-export const ContainerDolce = styled.div`
-  .imgDolce {
+export const ContainerPerfil = styled.div`
+  position: relative;
+
+  .imgPerfil {
     width: 1366px;
     height: 280px;
     object-fit: cover;
@@ -12,6 +14,6 @@ export const ContainerDolce = styled.div`
     top: 185px;
     left: 0;
     z-index: 0;
-    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
   }
 `

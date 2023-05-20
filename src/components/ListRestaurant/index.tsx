@@ -4,10 +4,18 @@ import { Container, List } from './styles'
 
 type Props = {
   title?: string
+  description?: string
   restaurant: Establishment[]
 }
 
 const RestaurantList = ({ title, restaurant }: Props) => {
+  const getDescricao = (description: string) => {
+    if (description.length > 250) {
+      return description.slice(0, 245) + '...'
+    }
+    return description
+  }
+
   const getTags = (restaurant: Establishment) => {
     const tags = []
 
@@ -36,7 +44,7 @@ const RestaurantList = ({ title, restaurant }: Props) => {
                 title={restaurant.titulo}
                 note={restaurant.avaliacao}
                 contents={getTags(restaurant)}
-                description={restaurant.descricao}
+                description={getDescricao(restaurant.descricao)}
               />
             ))}
           </List>

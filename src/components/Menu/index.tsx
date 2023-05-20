@@ -64,7 +64,7 @@ const MenuList = ({ image, title, description, preco, porcao }: Props) => {
               onClick={() => setModalEstaAberto(false)}
             />
             <p>{description}</p>
-            <p>{porcao}</p>
+            <p>{`Serve: ${porcao}`}</p>
             <button>{`Adicionao ao carrinho R$ - ${formataPreco(
               preco
             )}`}</button>

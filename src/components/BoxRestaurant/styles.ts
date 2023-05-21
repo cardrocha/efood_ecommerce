@@ -33,7 +33,7 @@ export const BoxContainer = styled.div`
 `
 export const BoxContent = styled.div`
   width: 100%;
-  padding: 8px;
+  padding: 8px 8px 12px 8px;
 `
 
 export const TitleContainer = styled.div`

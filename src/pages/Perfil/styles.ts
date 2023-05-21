@@ -14,6 +14,6 @@ export const ContainerPerfil = styled.div`
     top: 185px;
     left: 0;
     z-index: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
   }
 `

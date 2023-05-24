@@ -4,7 +4,8 @@ export const cores = {
   fundo: '#210062',
   fundoHome: '#dbdfea',
   texto: '#FF8400',
-  branco: '#fff'
+  branco: '#fff',
+  preto: '#000'
 }
 
 export const EstiloGlobal = createGlobalStyle`

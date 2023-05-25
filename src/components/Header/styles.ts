@@ -1,9 +1,14 @@
 import styled from 'styled-components'
-import { cores } from '../../../styles/styles'
+import { breakpoints, cores } from '../../../styles/styles'
 
 export const Content = styled.div`
+  max-width: 1366px;
   background-color: ${cores.fundo};
   text-align: center;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    overflow-y: hidden;
+  }
 
   img {
     margin-top: 64px;
@@ -18,4 +23,5 @@ export const Texto = styled.p`
   width: 700px;
   margin: 0 auto;
   padding-bottom: 40px;
+  background-color: ${cores.fundo};
 `

@@ -1,24 +1,36 @@
 import styled from 'styled-components'
-import { cores } from '../../../styles/styles'
+import { breakpoints, cores } from '../../../styles/styles'
 
 export const FooterBox = styled.div`
-  width: 1366px;
+  max-width: 1366px;
+  width: 100%;
   height: 298px;
   background-color: ${cores.fundo};
   padding: 40px;
   text-align: center;
 
+  .container {
+    background-color: ${cores.fundo};
+  }
+
   .imgEfood {
     margin-bottom: 32px;
-    margin-right: 30px;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      margin: 0 0 32px 0;
+    }
   }
 
   .imgLinks {
     display: flex;
-    margin: 0 585px;
+    margin: 0 590px;
     gap: 8px;
     width: 200px;
     margin-bottom: 80px;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      margin: 0 0 80px 300px;
+    }
 
     img {
       width: 24px;

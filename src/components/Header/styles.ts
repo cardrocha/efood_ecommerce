@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { breakpoints, cores } from '../../../styles/styles'
 
 export const Content = styled.div`
-  max-width: 1366px;
   background-color: ${cores.fundo};
   text-align: center;
 

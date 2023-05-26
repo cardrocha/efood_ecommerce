@@ -2,12 +2,22 @@ import styled from 'styled-components'
 import { breakpoints, cores } from '../../../styles/styles'
 
 export const FooterBox = styled.div`
-  max-width: 1366px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 298px;
   background-color: ${cores.fundo};
   padding: 40px;
   text-align: center;
+
+  img {
+    width: 10%;
+    margin: 0 auto;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      width: 18%;
+    }
+  }
 
   .container {
     background-color: ${cores.fundo};
@@ -23,14 +33,8 @@ export const FooterBox = styled.div`
 
   .imgLinks {
     display: flex;
-    margin: 0 590px;
     gap: 8px;
-    width: 200px;
     margin-bottom: 80px;
-
-    @media (max-width: ${breakpoints.desktop}) {
-      margin: 0 0 80px 300px;
-    }
 
     img {
       width: 24px;

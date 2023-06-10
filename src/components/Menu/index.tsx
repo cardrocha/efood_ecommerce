@@ -4,7 +4,6 @@ import { useState } from 'react'
 import { add, open } from '../../store/reducers/cart'
 
 import { parseToBrl } from '../../utils'
-import { MenuItem } from '../../pages/Home'
 import { ButtonCart } from '../Button/styles'
 import Button from '../Button'
 

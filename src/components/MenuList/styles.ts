@@ -6,6 +6,7 @@ export const ContainerMenu = styled.section`
   padding-top: 56px;
   padding-bottom: 120px;
   padding-left: 170px;
+  margin: 0 auto;
 
   @media (max-width: ${breakpoints.desktop}) {
     overflow-y: hidden;

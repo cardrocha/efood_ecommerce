@@ -1,9 +1,11 @@
 import styled from 'styled-components'
-import { breakpoints, cores } from '../../../styles/styles'
+import { breakpoints, colors } from '../../../styles/styles'
 
 export const Content = styled.div`
-  background-color: ${cores.fundo};
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: ${colors.purple};
 
   @media (max-width: ${breakpoints.desktop}) {
     overflow-y: hidden;
@@ -14,13 +16,18 @@ export const Content = styled.div`
     margin-bottom: 100px;
   }
 `
-export const Texto = styled.p`
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 42px;
-  color: ${cores.texto};
+export const Text = styled.p`
   width: 700px;
-  margin: 0 auto;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42px;
   padding-bottom: 40px;
-  background-color: ${cores.fundo};
+  text-align: center;
+  color: ${colors.orange};
+  background-color: ${colors.purple};
+
+  @media (max-width: ${breakpoints.tablet}) {
+    font-size: 28px;
+    width: 350px;
+  }
 `

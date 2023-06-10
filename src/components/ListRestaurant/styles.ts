@@ -9,6 +9,10 @@ export const Container = styled.section`
   @media (max-width: ${breakpoints.desktop}) {
     width: 60%;
   }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 100%;
+  }
 `
 
 export const List = styled.ul`
@@ -17,8 +21,14 @@ export const List = styled.ul`
   grid-gap: 48px 80px;
   margin-top: 80px;
   margin-bottom: 120px;
+
   @media (max-width: ${breakpoints.desktop}) {
     margin: 80px auto;
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-top: 80px;
     grid-template-columns: 1fr;
   }
 `

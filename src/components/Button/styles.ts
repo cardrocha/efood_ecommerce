@@ -1,14 +1,14 @@
 import styled from 'styled-components'
-import { cores } from '../../../styles/styles'
+import { colors } from '../../../styles/styles'
 import { Link } from 'react-router-dom'
 
 export const ButtonContainer = styled.button`
-  border: 1px solid ${cores.fundo};
+  border: 1px solid ${colors.purple};
   padding: 4px;
   font-size: 16px;
   font-weight: bold;
-  background-color: ${cores.fundo};
-  color: ${cores.texto};
+  background-color: ${colors.purple};
+  color: ${colors.orange};
   cursor: pointer;
 
   &:hover {
@@ -16,7 +16,7 @@ export const ButtonContainer = styled.button`
   }
 
   &:active {
-    border: 1px solid ${cores.texto};
+    border: 1px solid ${colors.orange};
   }
 `
 export const ButtonCart = styled(ButtonContainer)`
@@ -28,8 +28,8 @@ export const ButtonLink = styled(Link)`
   padding: 4px 8px;
   font-size: 16px;
   font-weight: bold;
-  background-color: ${cores.fundo};
-  color: ${cores.texto};
+  background-color: ${colors.purple};
+  color: ${colors.orange};
   text-decoration: none;
   cursor: pointer;
 
@@ -38,6 +38,6 @@ export const ButtonLink = styled(Link)`
   }
 
   &:active {
-    border: 1px solid ${cores.texto};
+    border: 1px solid ${colors.orange};
   }
 `

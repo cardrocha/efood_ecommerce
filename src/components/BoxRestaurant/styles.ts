@@ -1,12 +1,17 @@
 import styled from 'styled-components'
-import { cores } from '../../../styles/styles'
+import { breakpoints, colors } from '../../../styles/styles'
 import { TagContainer } from '../Tag/styles'
 
 export const BoxContainer = styled.div`
-  background-color: ${cores.branco};
+  background-color: ${colors.white};
   position: relative;
-  width: 471px;
-  border: 1px solid ${cores.fundo};
+  width: 100%;
+  border: 1px solid ${colors.purple};
+
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 95%;
+    margin: 0 auto;
+  }
 
   .note {
     display: flex;
@@ -49,17 +54,17 @@ export const TagTitle = styled.div`
   right: 2px;
 `
 
-export const Titulo = styled.h3`
+export const Title = styled.h3`
   font-size: 18px;
   font-weight: 700;
-  color: ${cores.texto};
+  color: ${colors.orange};
   display: block;
   margin-top: 8px;
   margin-bottom: 16px;
 `
-export const Descricao = styled.p`
+export const Description = styled.p`
   display: block;
-  color: ${cores.texto};
+  color: ${colors.orange};
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;

@@ -1,26 +1,22 @@
 import styled from 'styled-components'
-import { breakpoints, cores } from '../../../styles/styles'
+import { breakpoints, colors } from '../../../styles/styles'
 
 export const FooterBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: ${cores.fundo};
+  background-color: ${colors.purple};
   padding: 40px;
   text-align: center;
 
   img {
-    width: 10%;
+    width: 125px;
     margin: 0 auto;
-
-    @media (max-width: ${breakpoints.desktop}) {
-      width: 18%;
-    }
   }
 
   .container {
-    background-color: ${cores.fundo};
+    background-color: ${colors.purple};
   }
 
   .imgEfood {
@@ -42,12 +38,21 @@ export const FooterBox = styled.div`
   }
 `
 
-export const Paragrafo = styled.p`
+export const Paragraph = styled.p`
   width: 480px;
   margin: 0 auto;
   font-size: 10px;
   font-weight: 400;
   line-height: 12px;
   text-align: center;
-  color: ${cores.texto};
+  color: ${colors.orange};
+
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 280px;
+  }
+
+  @media (min-width: ${breakpoints.tablet}) {
+    font-size: 12px;
+    width: 280px;
+  }
 `

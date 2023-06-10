@@ -20,8 +20,8 @@ const HeaderPerfil = ({ content }: Props) => {
   }
 
   return (
-    <div>
-      <S.ContentProfile className="container">
+    <div className="container">
+      <S.ContentProfile>
         <S.LinkProfile title="clique aqui para voltar aos restaurantes" to="/">
           Restautantes
         </S.LinkProfile>

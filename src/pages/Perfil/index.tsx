@@ -30,7 +30,9 @@ const Perfil = () => {
           cardapio: []
         }}
       />
-      <img className="imgPerfil" src={cardapio.capa} alt={cardapio.titulo} />
+      <div className="container">
+        <img className="imgPerfil" src={cardapio.capa} alt={cardapio.titulo} />
+      </div>
       <ListMenu menu={cardapio.cardapio} />
       <Cart />
     </ContainerPerfil>

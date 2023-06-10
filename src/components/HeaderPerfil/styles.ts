@@ -4,22 +4,24 @@ import styled from 'styled-components'
 import { breakpoints, colors } from '../../../styles/styles'
 
 export const ContentProfile = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   width: 100%;
   height: 186px;
   background-color: ${colors.purple};
   color: ${colors.orange};
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (max-width: ${breakpoints.desktop}) {
     flex-direction: column;
     align-items: center;
     gap: 32px;
   }
 
-  img {
-    margin-left: 25px;
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
   }
 `
 export const TextProfile = styled.div`
@@ -45,7 +47,7 @@ export const LinkProfile = styled(Link)`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    margin: 4px 0 0 0;
+    margin-top: 20px;
   }
 `
 export const CartProfile = styled.span`
@@ -59,35 +61,35 @@ export const CartProfile = styled.span`
   }
 
   @media (max-width: ${breakpoints.tablet}) {
-    margin-bottom: 4px;
+    margin-bottom: 20px;
   }
 `
 
 export const TitleTypeProfile = styled.h2`
+  position: absolute;
   font-size: 32px;
   font-weight: 100;
   color: ${colors.white};
-  position: absolute;
   top: 220px;
-  left: 165px;
+  margin-left: 170px;
   z-index: 1;
 
   @media (max-width: ${breakpoints.tablet}) {
     top: 220px;
-    left: 15px;
+    margin-left: 20px;
   }
 `
 export const TitleProfile = styled.h3`
+  position: absolute;
   font-size: 32px;
   font-weight: 900;
   color: ${colors.white};
-  position: absolute;
   top: 395px;
-  left: 165px;
+  margin-left: 170px;
   z-index: 1;
 
   @media (max-width: ${breakpoints.tablet}) {
     top: 395px;
-    left: 15px;
+    margin-left: 20px;
   }
 `

@@ -1,4 +1,4 @@
-![Home do EFOOD](../src/assets/image/efood.png)
+![Home do EFOOD](/src/assets/image/efood.png)
 
 
 # EFOOD - Simulação de E-commerce de Restaurantes

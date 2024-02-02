@@ -1,6 +1,5 @@
 ![Home do EFOOD](/src/assets/image/efood.png)
 
-
 # EFOOD - Simulação de E-commerce de Restaurantes
 
 EFOOD é um projeto que simula um e-commerce de restaurantes, permitindo aos usuários visualizar e comprar pratos oferecidos por diversos estabelecimentos. Utiliza requisições para listar restaurantes e seus respectivos pratos por meio de uma API.
@@ -15,18 +14,20 @@ EFOOD é um projeto que simula um e-commerce de restaurantes, permitindo aos usu
 
 ## Tecnologias Utilizadas
 
-- **React**: Utilizado para a construção da interface do usuário.
-- **React Router DOM**: Para a navegação entre as diferentes páginas do aplicativo.
-- **Redux**: Gerenciamento de estado, especialmente para o carrinho de compras.
-- **React Query**: Utilizado para realizar requisições e armazenar em cache os dados da API.
-- **Styled-Components**: Biblioteca para estilização dos componentes.
-- **TypeScript**: Adiciona tipagem estática ao JavaScript, aumentando a robustez e a manutenibilidade do código.
+- **React**: utilizado para a construção da interface do usuário.
+- **React Router DOM**: para a navegação entre as diferentes páginas do aplicativo.
+- **Redux**: gerenciamento de estado, especialmente para o carrinho de compras.
+- **React Query**: utilizado para realizar requisições e armazenar em cache os dados da API.
+- **Styled-Components**: biblioteca para estilização dos componentes.
+- **TypeScript**: uma biblioteca que facilita a criação de formulários em React.
+- **Formik**: adiciona tipagem estática ao JavaScript, aumentando a robustez e a manutenibilidade do código.
+- **Yup**: uma biblioteca que permite validar os dados dos formulários.
 
 ## Como Executar
 
 1. Clone o repositório do projeto:
 
-````bash
+`````bash
 git clone https://github.com/seu-usuario/efood.git
 
 2. Navegue até o diretório do projeto:
@@ -49,3 +50,4 @@ npm run dev
 yarn dev
 
 
+`````

@@ -22,3 +22,12 @@ export const ContainerPerfil = styled.div`
     background: rgba(0, 0, 0, 0.2);
   }
 `
+
+export const Loading = styled.h3`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 32px;
+  text-align: center;
+`

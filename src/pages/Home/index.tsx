@@ -1,5 +1,6 @@
 import Header from '../../components/Header'
 import RestaurantList from '../../components/ListRestaurant'
+import Loader from '../../components/Loader'
 
 import { useGetHomeQuery } from '../../services/api'
 
@@ -26,16 +27,15 @@ import { useGetHomeQuery } from '../../services/api'
 const Home = () => {
   const { data: restaurant } = useGetHomeQuery()
 
-  if (!restaurant) {
-    return <h3>Carregando...</h3>
+  if (restaurant) {
+    return (
+      <>
+        <Header />
+        <RestaurantList restaurant={restaurant} />
+      </>
+    )
   }
-
-  return (
-    <>
-      <Header />
-      <RestaurantList restaurant={restaurant} />
-    </>
-  )
+  return <Loader />
 }
 
 export default Home
